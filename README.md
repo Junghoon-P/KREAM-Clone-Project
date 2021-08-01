@@ -2,6 +2,7 @@
 
 [프론트](https://github.com/Junghoon-P/KREAM-Clone-Project) - 박정훈(PM), 이경민, 오지수<br/>
 [백앤드](https://github.com/wecode-bootcamp-korea/22-2nd-GREAM-backend) - 김한준, 안재경, 서정민
+[구현영상](https://www.youtube.com/watch?v=Mvr7map6Y2M)
 
 ## 담당파트
 
