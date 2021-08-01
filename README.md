@@ -1,6 +1,6 @@
 ## 프로젝트명: Dr.Mozzarella
 
-프론트 - 박정훈(PM), 이경민, 오지수<br/>
+[프론트](https://github.com/Junghoon-P/KREAM-Clone-Project) - 박정훈(PM), 이경민, 오지수<br/>
 [백앤드](https://github.com/wecode-bootcamp-korea/22-2nd-GREAM-backend) - 김한준, 안재경, 서정민
 
 ## 담당파트
