@@ -1,30 +1,62 @@
-## 프로젝트명: Dr.Mozzarella
+# 🖼 GREAM
 
-[프론트](https://github.com/Junghoon-P/KREAM-Clone-Project) - 박정훈(PM), 이경민, 오지수<br/>
-[백앤드](https://github.com/wecode-bootcamp-korea/22-2nd-GREAM-backend) - 김한준, 안재경, 서정민<br/>
-[![구현영상](https://img.youtube.com/vi/Mvr7map6Y2M/0.jpg)](https://www.youtube.com/watch?v=Mvr7map6Y2M/)
-</br><b>구현영상👆</b>
-</br>
-</br>
+### 개발 기간 : 2021년 7월 19일 ~ 7월 30일 (PM을 맡았습니다.)
+    개발 인원 :  프론트엔드 3인, 백엔드 3인
 
-## 담당파트
+### 사용 기술
+    
+     Front-End : React Hooks, Styled-Component
+    
+     Back-End : Python, Django, MySQL, Bcrypt, pyJWT, Docker, s3
+    
+     Common : AWS(EC2,RDS), RESTful API
 
-#### Shop Page Layout
-- 샵페이지 레이아웃
-- 드롭다우 필터
-- 카드 컴포넌트
+### 담당파트
 
-#### Fitering
-- 중복 선택
-- 필터 선택 제거
+    Shop Page Layout
+    - 샵페이지 레이아웃
+    - 드롭다우 필터
+    - 카드 컴포넌트
 
-#### Sort
-- 옵션 선택시 선택한 value에 맞게 sort
+    Fitering
+    - 중복 선택
+    - 필터 선택 제거
 
-#### Pagination
-- 들어오는 data의 크기에 맞게 pagination button 수 자동 증가 및 감소
-- 3페이지에서 필터링시 자동을 1페이지로 이동
+    Sort
+    - 옵션 선택시 선택한 value에 맞게 sort
+
+    Pagination
+    - 들어오는 data의 크기에 맞게 pagination button 수 자동 증가 및 감소
+    - 3페이지에서 필터링시 자동을 1페이지로 이동
+
+### 구현 영상
+
+   - [구현 영상](https://youtu.be/Mvr7map6Y2M)
+
+약 2주간 신발 경매 플랫폼 KREAM을 모티브로 GREAM 사이트를 제작했습니다.
+다양한 미술품을 경매하는 컨셉의 사이트로 제작했습니다.
+
+***
+
+### 개발 및 기획 과정
+- 기억에 남는 코드
+    
+    <img width="182" alt="스크린샷_2021-09-03_오후_10 55 51" src="https://user-images.githubusercontent.com/77766769/146684309-ffeaf796-c876-4506-9fc7-611180b409b6.png">
+
+    
+    프로젝트를 마치며 가장 먼저 떠오른 것은 코드가 아니라 fetch의 위치 문제로 shop 페이지의 전체 구조를 2번이나 수정한 사건입니다. 일단 빠르게 기능을 구현한다는 생각을 가지다 보니 발생한 문제였습니다. 또한 과도한 컴포넌트 세분화로 매번 폴더를 찾아 들어갈때마다 불필요한 시간을 소비했었습니다. 이러한 소중한 경험을 통해 **폴더 구조에 대해 신중**해지게 되었습니다.
+    
+    ![스크린샷_2021-09-03_오후_11 03 30](https://user-images.githubusercontent.com/77766769/146684320-df839a93-0895-4980-92a4-8963700d4f4a.png)
+
+    
+    Pagination 및 필터링을 구현하기 위해, shop 페이지에서 함수를 선언하여 하위 컴포넌트에서 props로 사용하였습니다. 중복 필터링을 구현하기 위해 getCategory, makeQuery 라는 함수를 제작한뒤 체크박스에서 선택된 카테고리의 정보를 가공하여 쿼리문에 추가하였습니다.
+    
+    한 페이지 내에서 3가지의 기능을 동시에 적용하다 보니 예상하지 못한 변수가 많았습니다. 무한랜더링에 빠져 보기도 하고 받아오는 데이터의 구조를 제가 필터링에 적합하도록 가공하는 부분이 가장 까다로웠습니다. **다양한 컴포넌트에서 동일한 함수를 사용하여 재사용성에 대해서 고려해보게 되었고, state를 관리하며 전역변수에 관해서도 관심이 생기게 되었습니다.**
+    
+***
+
+**🖼  [프로젝트 후기 Velog 링크](https://velog.io/@park_kyo_su/Project-2-Clone-KREAM)**
 
 #### Reference
-- 이 프로젝트는 소셜 커리어 플랫폼 KREAM 사이트를 참조하여 학습 목적으로 만들었습니다.
-- 실무수준의 프로젝트이지만 학습용으로 만들었기 때문에 이 코드를 활용하여 이득을 취하거나 무단 배포할 경우 법적으로 문제될 수 있습니다.
+이 프로젝트는 소셜 커리어 플랫폼 KREAM 사이트를 참조하여 학습 목적으로 만들었습니다.
+실무수준의 프로젝트이지만 학습용으로 만들었기 때문에 이 코드를 활용하여 이득을 취하거나 무단 배포할 경우 법적으로 문제될 수 있습니다.
